@@ -1,0 +1,32 @@
+:root {
+  color-scheme: light dark;
+  --box-size: 4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+
+}
+
+#main-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--box-size));
+}
+
+.grid-box {
+  width: var(--box-size);
+  height: var(--box-size);
+  border: 1px solid gray;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    
+  }
+
+}
