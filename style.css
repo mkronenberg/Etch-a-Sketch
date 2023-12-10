@@ -1,15 +1,12 @@
 :root {
   color-scheme: light dark;
-  --box-size: 4rem;
+  --box-size: 16px;
 }
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-body {
-
 }
 
 #main-grid {
@@ -23,10 +20,11 @@ body {
   border: 1px solid gray;
 }
 
+
 @media (prefers-color-scheme: dark) {
 
-  body {
-    
+  .grid-box {
+    border-color: hsl(0, 0%, 15%);
   }
 
 }
