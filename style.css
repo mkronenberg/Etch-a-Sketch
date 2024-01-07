@@ -9,17 +9,43 @@
   margin: 0;
 }
 
+header {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redraw-form {
+  display: flex;
+}
+
+.slider-group {
+  display: inline-flex;
+  gap: .75rem;
+}
+
+#tick {
+  max-width: 50dvw;
+  width: 16rem;
+}
+
+.slider-display {
+  width: 1.2rem;
+}
+
 #main-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, var(--box-size));
 }
 
 .grid-box {
-  width: var(--box-size);
-  height: var(--box-size);
   border: 1px solid gray;
 }
 
+.activated {
+  background-color: red;
+}
 
 @media (prefers-color-scheme: dark) {
 

@@ -7,6 +7,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header id="header">
+    <h1>Etch-a-Sketch</h1>
+    <form action="" method="get" >
+      <div id="redraw-form">
+        <div class="slider-group">
+          <label for="tick">Pixel Grid Size</label>
+          <input type="range" list="tickmarks" step="8" min="8" max="64" id="tick" name="tick" />
+          <datalist id="tickmarks">
+            <option value="8"></option>
+            <option value="16"></option>
+            <option value="24"></option>
+            <option value="32"></option>
+            <option value="40"></option>
+            <option value="48"></option>
+            <option value="56"></option>
+            <option value="64"></option>
+          </datalist>
+          <div class="slider-display">
+            <output id="pixel-value"></output>
+          </div>
+        </div>
+      <button type="button" id="redraw">Redraw</button>
+      </div>
+ 
+    </form>
+  </header>
   <div id="main-grid"></div>
   <script src="script.js"></script>
 </body>
